@@ -1,0 +1,32 @@
+<div class="mt-4">
+    <h3>Cập Nhật Đồ Án</h3>
+
+    <form class="mt-4" method="POST" action="/courses/{{course._id}}?_method=PUT">
+        <div class="form-group">
+            <label for="name">Tên Sinh Viên</label>
+            <input type="text" class="form-control" value="{{course.svPerform}}" id="svPerform" name="svPerform">
+        </div>
+        <div class="form-group">
+            <label for="description">Tên Đồ Án</label>
+            <input type="text" class="form-control" value="{{course.nameProject}}" id="nameProject" name="nameProject">
+        </div>
+        <div class="form-group">
+            <label for="videoId">Mô Tả</label>
+            <input type="text" class="form-control" value="{{course.description}}" id="description" name="description">
+        </div>
+        <div class="form-group">
+            <label for="videoId">Tên Giáo Viên HD</label>
+            <input type="text" class="form-control" value="{{course.nameTeacher}}" id="nameTeacher" name="nameTeacher">
+        </div>
+        <div class="form-group">
+            <label for="videoId">File Word</label>
+            <input type="text" class="form-control" value="{{course.fileWord}}" id="fileWord" name="fileWord">
+        </div>
+        <div class="form-group">
+            <label for="videoId">File Zip Source</label>
+            <input type="text" class="form-control" value="{{course.fileZip}}" id="fileZip" name="fileZip">
+        </div>
+    
+        <button type="submit" class="btn btn-primary">Lưu Đồ Án</button>
+    </form>
+</div>
